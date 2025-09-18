@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h1>User Information Form</h1>
+  <form action="submit.html" method="get">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <p>Age:</p>
+    <label><input type="radio" name="age" value="18"> &lt;18</label>
+    <label><input type="radio" name="age" value="19-35"> 19–35</label>
+    <label><input type="radio" name="age" value="36-48"> 36–48</label>
+    <label><input type="radio" name="age" value=">49"> &gt;49</label><br><br>
+    <label for="profession">Profession:</label>
+    <input type="text" id="profession" name="profession"><br><br>
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="">--Select--</option>
+      <option value="Vietnam">Vietnam</option>
+      <option value="USA">USA</option>
+      <option value="UK">UK</option>
+      <option value="Other">Other</option>
+    </select><br><br>
+    <label for="interests">Interests:</label>
+    <select id="interests" name="interests" multiple size="4">
+      <option value="Coding">Coding</option>
+      <option value="Music">Music</option>
+      <option value="Sports">Sports</option>
+      <option value="Reading">Reading</option>
+    </select><br><br>
+    <label for="discovery">How did you find out about this site?</label><br>
+    <textarea id="discovery" name="discovery" rows="4" cols="50"></textarea><br><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
