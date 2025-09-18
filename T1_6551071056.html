@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: white;
+    }
+    header {
+      background-color: yellow;
+      padding: 10px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: black;
+    }
+    .container {
+      display: flex;
+    }
+    nav {
+      width: 150px;
+      padding: 15px;
+      border-right: 1px solid gray;
+    }
+    nav a {
+      display: block;
+      margin: 10px 0;
+      color: blue;
+      text-decoration: none;
+    }
+    main {
+      flex: 1;
+      padding: 20px;
+    }
+    article {
+      margin-bottom: 30px;
+    }
+    article h2 {
+      margin-bottom: 5px;
+      color: black;
+    }
+    article .date {
+      font-size: 14px;
+      color: gray;
+      margin-bottom: 10px;
+    }
+    aside {
+      width: 200px;
+      border: 1px dashed green;
+      margin: 15px;
+      padding: 10px;
+      height: fit-content;
+    }
+    aside h3 {
+      margin-bottom: 10px;
+    }
+    aside a {
+      display: block;
+      color: blue;
+      text-decoration: none;
+      margin-bottom: 5px;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    footer a {
+      color: blue;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>My blog about my life</header>
+  <div class="container">
+    <nav>
+      <strong>Menu</strong>
+      <a href="#">Today</a>
+      <a href="#">Yesterday</a>
+      <a href="#">Last week</a>
+      <a href="#">Archives</a>
+    </nav>
+    <main>
+      <article>
+        <h2>Meeting with supervisor</h2>
+        <div class="date">14 Dec 2011</div>
+        <p>Today I went to the university by bus.</p>
+        <p>I had a meet with my PhD supervisor.</p>
+      </article>
+      <article>
+        <h2>New car!!!</h2>
+        <div class="date">12 Dec 2011</div>
+        <p>Today I bought my new car. It's a Honda Accord and it’s really nice.</p>
+        <p>I met some friends at a pub.</p>
+      </article>
+      <article>
+        <h2>Visit my parents</h2>
+        <div class="date">10 Dec 2011</div>
+        <p>Tried to contact my PhD supervisor. He was out of his office.</p>
+        <p>I visited my parents and we had a nice dinner together.</p>
+      </article>
+      <footer>
+        Contact me: <a href="mailto:email@somthing.com">email@somthing.com</a>
+      </footer>
+    </main>
+    <aside>
+      <h3>Last posts</h3>
+      <a href="#">Meeting with supervisor</a>
+      <a href="#">New car!!!</a>
+      <a href="#">Visit my parents</a>
+    </aside>
+  </div>
+</body>
+</html>

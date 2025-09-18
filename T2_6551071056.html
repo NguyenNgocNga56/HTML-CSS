@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>University Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            width: 600px;
+            margin: 0 auto;
+            border: 2px solid blue;
+            padding: 10px;
+        }
+        header {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .logo {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: underline;
+            color: black;
+            font-weight: bold;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .news, .announcements {
+            width: 45%;
+        }
+        .news {
+            border-right: 1px solid blue;
+            padding-right: 10px;
+        }
+        .announcements {
+            padding-left: 10px;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        footer {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>Home page</header>
+    <div class="container">
+        <div class="logo">Logo - University name</div>
+        <nav>
+            <a href="#">Presentation</a>
+            <a href="#">Studies</a>
+            <a href="#">Staff</a>
+        </nav>
+        <div class="content">
+            <div class="news">
+                <div class="section-title">News</div>
+                <p>News 1 – Date<br>Description</p>
+                <p>News 2 – Date<br>Description</p>
+            </div>
+            <div class="announcements">
+                <div class="section-title">Announcements</div>
+                <p>Open course 1<br>Description</p>
+                <p>Open course 2<br>Description</p>
+            </div>
+        </div>
+        <footer>
+            Contact: <a href="mailto:info@university.com">info@university.com</a><br>
+            (c) University, 2011
+        </footer>
+    </div>
+</body>
+</html>
