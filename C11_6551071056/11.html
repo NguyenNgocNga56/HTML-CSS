@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Web Kết Hợp Menu</title>
+    <link rel="stylesheet" href="11.css">
+</head>
+<body>
+    <ul class="menu-ngang">
+        <li><a href="#" onclick="showContent('home')">Trang chủ</a></li>
+        <li><a href="#" onclick="showContent('gioithieu')">Giới thiệu</a></li>
+        <li><a href="#" onclick="showContent('tintuc')">Tin Tức</a></li>
+        <li>
+            <a href="#">Liên hệ</a>
+            <ul class="menu-con">
+                <li><a href="#" onclick="showContent('lienhe')">Số điện thoại</a></li>
+                <li><a href="#" onclick="showContent('email')">Email</a></li>
+                <li><a href="#" onclick="showContent('diachi')">Địa chỉ</a></li>
+            </ul>
+        </li>
+        <li><a href="#" onclick="showContent('gopy')">Góp ý</a></li>
+    </ul>
+
+    <div class="container">
+        <div class="menu-doc">
+            <div class="title">DANH MỤC SẢN PHẨM</div>
+            <ul>
+                <li><a href="#" onclick="showContent('matvot')">Mặt vợt</a></li>
+                <li><a href="#" onclick="showContent('cotvot')">Cốt vợt</a></li>
+                <li><a href="#" onclick="showContent('bong')">Bóng</a></li>
+                <li><a href="#" onclick="showContent('giaytat')">Giày/tất bóng bàn</a></li>
+                <li><a href="#" onclick="showContent('quanao')">Quần áo bóng bàn</a></li>
+                <li><a href="#" onclick="showContent('phukien')">Phụ kiện bóng bàn</a></li>
+                <li><a href="#" onclick="showContent('thietbi')">Thiết bị bóng bàn</a></li>
+                <li><a href="#" onclick="showContent('bovot')">Bộ vợt khuyên dùng</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div id="home" class="content-box">
+                <h1>Trang chủ</h1>
+                <p>Chào mừng bạn đến với website của chúng tôi.</p>
+            </div>
+
+            <div id="gioithieu" class="content-box" style="display:none;">
+                <h1>Giới thiệu</h1>
+                <p>Trang web này là nơi chia sẻ thông tin về bóng bàn, sản phẩm, và kiến thức công nghệ web.</p>
+            </div>
+
+            <div id="tintuc" class="content-box" style="display:none;">
+                <h1>Tin tức</h1>
+                <p>Cập nhật tin tức thể thao và công nghệ mới nhất.</p>
+            </div>
+
+            <div id="lienhe" class="content-box" style="display:none;">
+                <h1>Liên hệ</h1>
+                <p>Số điện thoại: 0123 456 789</p>
+            </div>
+
+            <div id="email" class="content-box" style="display:none;">
+                <h1>Email</h1>
+                <p>Email liên hệ: contact@webcuatoi.vn</p>
+            </div>
+
+            <div id="diachi" class="content-box" style="display:none;">
+                <h1>Địa chỉ</h1>
+                <p>123 Đường Lập Trình, Quận HTML, Thành phố Web</p>
+            </div>
+
+            <div id="gopy" class="content-box" style="display:none;">
+                <h1>Góp ý</h1>
+                <p>Vui lòng gửi góp ý qua biểu mẫu hoặc email.</p>
+            </div>
+
+            <div id="matvot" class="content-box" style="display:none;">
+                <h1>Mặt vợt</h1>
+                <p>Các loại mặt vợt chất lượng cao từ Nhật Bản, Đức...</p>
+            </div>
+
+            <div id="cotvot" class="content-box" style="display:none;">
+                <h1>Cốt vợt</h1>
+                <p>Chọn cốt vợt phù hợp với phong cách chơi của bạn.</p>
+            </div>
+
+            <div id="bong" class="content-box" style="display:none;">
+                <h1>Bóng</h1>
+                <p>Bóng đạt tiêu chuẩn thi đấu quốc tế.</p>
+            </div>
+
+            <div id="giaytat" class="content-box" style="display:none;">
+                <h1>Giày/Tất</h1>
+                <p>Giày thể thao chuyên dụng cho bóng bàn.</p>
+            </div>
+
+            <div id="quanao" class="content-box" style="display:none;">
+                <h1>Quần áo bóng bàn</h1>
+                <p>Quần áo chuyên dụng</p>
+            </div>
+
+            <div id="phukien" class="content-box" style="display:none;">
+                <h1>Phụ kiện bóng bàn</h1>
+                <p>Phụ kiện chuyên dụng</p>
+            </div>
+
+            <div id="thietbi" class="content-box" style="display:none;">
+                <h1>Thiết bị bóng bàn</h1>
+                <p>Thiết bị chuyên dụng</p>
+            </div>
+
+            <div id="bovot" class="content-box" style="display:none;">
+                <h1>Bộ vợt khuyên dùng</h1>
+                <p>Vợt 1 triệu trở lên</p>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function showContent(id) {
+            var sections = document.querySelectorAll('.content-box');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            var selected = document.getElementById(id);
+            if (selected) {
+                selected.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

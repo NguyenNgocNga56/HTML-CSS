@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.menu-ngang {
+    list-style: none;
+    background: orange;
+    display: flex;
+    position: relative;
+}
+
+.menu-ngang > li {
+    position: relative;
+}
+
+.menu-ngang > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-ngang > li:hover {
+    background: #ff9900;
+}
+
+.menu-ngang li ul.menu-con {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: orange;
+    list-style: none;
+    min-width: 180px;
+    z-index: 1000;
+}
+
+.menu-ngang li:hover > ul.menu-con {
+    display: block;
+}
+
+.menu-con li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.menu-con li:hover {
+    background: #ff9900;
+}
+
+.menu-con li ul.menu-con {
+    top: 0;
+    left: 100%;
+}
+
+.container {
+    display: flex;
+}
+
+.menu-doc {
+    width: 220px;
+    background: #eee;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+}
+
+.menu-doc .title {
+    background: orange;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.menu-doc ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-doc ul li {
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-doc ul li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu-doc ul li:hover {
+    background: #ddd;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.content-box {
+    display: none;
+}
