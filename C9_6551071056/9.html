@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký du lịch</title>
+    <link rel="stylesheet" href="9.css">
+</head>
+<body>
+    <h2 class="title">Đăng ký du lịch</h2>
+    <form id="tourForm" class="form-container">
+        <label>Họ và tên</label><br>
+        <input type="text" name="hoten" value=""><br><br>
+
+        <label>Địa chỉ</label><br>
+        <input type="text" name="diachi" value=""><br><br>
+
+        <label>Điện thoại</label><br>
+        <input type="text" name="dienthoai" value=""><br><br>
+
+        <label>Khách Việt Nam</label>
+        <input type="checkbox" name="khachviet"><br><br>
+
+        <label>Chọn tour</label><br>
+        <select name="tour">
+            <option>Buôn mê thuột - Gia Lai - Kontum</option>
+            <option>Đà Lạt - Nha Trang</option>
+            <option>Huế - Đà Nẵng</option>
+        </select><br><br>
+
+        <label>Phương tiện</label><br>
+        <input type="radio" name="phuongtien" value="maybay"> Máy bay
+        <input type="radio" name="phuongtien" value="oto"> Xe ô tô<br><br>
+
+        <fieldset class="group-box">
+            <legend>Số lượng đoàn khách</legend>
+            Người lớn: <input type="number" name="nguoilon" value="1" min="1">
+            Trẻ em: <input type="number" name="treem" value="0" min="0">
+        </fieldset><br>
+
+        <label>Ghi chú thêm</label><br>
+        <textarea name="ghichu" rows="3"></textarea><br><br>
+
+        <input type="submit" value="Đồng ý" class="btn">
+    </form>
+
+    <p id="successMsg" class="success-msg" style="display:none;">
+        Bạn đã đăng ký thành công!!!
+    </p>
+
+    <script>
+        const form = document.getElementById("tourForm");
+        const successMsg = document.getElementById("successMsg");
+
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            successMsg.style.display = "block";
+        });
+    </script>
+</body>
+</html>

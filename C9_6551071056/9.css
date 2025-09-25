@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+}
+
+.title {
+    text-align: center;
+    color: blue;
+}
+
+.form-container {
+    width: 400px;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+input[type="text"], 
+input[type="number"], 
+select, 
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 3px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+
+.group-box {
+    border: 1px solid red;
+    padding: 10px;
+}
+
+.group-box legend {
+    color: red;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #eee;
+    border: 1px solid #aaa;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.success-msg {
+    text-align: center;
+    color: orange;
+    font-weight: bold;
+    margin-top: 15px;
+}
